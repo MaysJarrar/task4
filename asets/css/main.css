@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Inter;
+}
+
+.header{
+    border-bottom: 1px solid #EEEEF2;
+    background-color: #FAF8FF;
+}
+
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header .row{
+    padding: 21.84px 0px;
+    justify-content: space-between;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.list ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.list a{
+    color: #3A3845;
+    font-size: 16px;
+}
+
+.logo h1{
+    font-size: 24px;
+    font-weight: 700;
+    color: #00236F;
+}
+
+.header .list h1{
+    font-size: 16px;
+    font-weight: 400;
+    color: #00236F;
+}
+
+
+
+.button{
+    background-color: #00236F;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.elements{
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.elements .row{
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.element{
+    background-color:#FAF8FF;
+    text-align: center;
+    width: calc((100% - 90px)/4);
+    padding: 40px 25px;
+    border-radius: 16px;
+    border: 1px solid #C5C5D3;
+    height: 240px;
+    
+}
+
+.element h1{
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #111111;
+}
+
+.element h2{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666666;
+}
+
+/* ===================== */
+/* Tablet */
+/* ===================== */
+
+@media screen and (max-width:992px){
+
+    .element{
+        width: calc((100% - 30px)/2);
+    }
+
+    .list ul{
+        gap: 30px;
+    }
+}
+
+/* ===================== */
+/* Mobile */
+/* ===================== */
+
+@media screen and (max-width:768px){
+
+    .header .row{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .list ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .element{
+        width: 100%;
+    }
+
+    .elements{
+        padding: 50px 0;
+    }
+}
